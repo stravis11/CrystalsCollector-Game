@@ -31,28 +31,28 @@ $(document).ready(function () {
 
     //On click functions for when crystals are selected
     $(".crystal1").on("click", function () {
-        totalScore = crys1Num;
-        $("#totalScore").append(totalScore);
+        update(crystalOne);
     });
 
     $(".crystal2").on("click", function () {
-        totalScore = crys2Num;
-        $("#totalScore").append(totalScore);
+        update(crystalTwo);
     });
 
     $(".crystal3").on("click", function () {
-        totalScore = crys3Num;
-        $("#totalSCore").append(totalScore);
+        update(crystalThree)
     });
 
     $(".crystal4").on("click", function () {
-        totalScore = crys4Num;
-        $("#totalScore").append(totalScore);
+        update(crystalFour);
     });
 
+//Updating crystal values and total score function
+function update(crystal) {
 
 
+    console.log(crystal);
 
+}
 
 //Rest game function
 function resetGame() {
