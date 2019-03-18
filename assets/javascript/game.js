@@ -14,7 +14,7 @@ $(document).ready(function () {
     //Generate random number between 19 - 120 for number to guess
     var randomNum = Math.floor(Math.random() * 120) + 19;
     console.log(randomNum);
-    
+
 
 
     //Display random number in Number to guess field
@@ -48,6 +48,8 @@ $(document).ready(function () {
         update(crystalFour);
     });
 
+    
+
     //Updating crystal values and total score function
     function update(crystal) {
 
@@ -58,7 +60,7 @@ $(document).ready(function () {
         //Add player's totalScore value
         $("#userScore").html(totalScore);
 
-      
+
 
 
 
@@ -84,22 +86,26 @@ $(document).ready(function () {
 
     };
 
-        //Rest game function
-        function resetGame() {
+    //Rest game function
+    
+    function resetGame() {
+        console.log("Reset");
+        //Generate a new total score number
+        randomNum = Math.floor(Math.random() * 120) + 19;
+        $("#num-to-guess").html(randomNum);
+        //Genreate new random numbers for crystals
+        crystalOne = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalOne);
+        crystalTwo = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalTwo);
+        crystalThree = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalThree);
+        crystalFour = Math.floor(Math.random() * 12) + 1;
+        console.log(crystalFour);
+        //Reset total score back to zero
+        totalScore = 0;
+        $("#userScore").html(totalScore);
+    };
 
-            //Generate a new total score number
-            randomNum = Math.floor(Math.random() * 120) + 19;
 
-            //Genreate new random numbers for crystals
-            crys1Num = Math.floor(Math.random() * 12) + 1;
-            crys2Num = Math.floor(Math.random() * 12) + 1;
-            crys3Num = Math.floor(Math.random() * 12) + 1;
-            crys4Num = Math.floor(Math.random() * 12) + 1;
-
-            //Reset total score back to zero
-            totalScore = 0;
-            $("#userScore").html(totalScore);
-        };
-
-
-    });
+});
