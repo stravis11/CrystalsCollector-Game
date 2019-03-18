@@ -49,10 +49,16 @@ $(document).ready(function () {
 //Updating crystal values and total score function
 function update(crystal) {
 
+    //Add totalScore and crystal parameters together
+    totalScore += crystal;
+    //Remove previous entries
+    $("#totalScore").empty();
+    //Add player's totalScore value
+    $("#totalScore").append(totalScore);
+    
+    console.log(totalScore);
 
-    console.log(crystal);
-
-}
+};
 
 //Rest game function
 function resetGame() {
