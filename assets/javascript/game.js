@@ -14,10 +14,12 @@ $(document).ready(function () {
     //Generate random number between 19 - 120 for number to guess
     var randomNum = Math.floor(Math.random() * 120) + 19;
     console.log(randomNum);
+    
 
 
     //Display random number in Number to guess field
     $("#num-to-guess").html(randomNum);
+    $("#userScore").html(totalScore);
 
     //Generate random numbers betwee 1 - 12 for crystals
     var crystalOne = Math.floor(Math.random() * 12) + 1;
@@ -52,11 +54,11 @@ $(document).ready(function () {
         //Add totalScore and crystal parameters together
         totalScore += crystal;
         //Remove previous entries
-        $("#totalScore").empty();
+        $("#userScore").empty();
         //Add player's totalScore value
-        $("#totalScore").append(totalScore);
+        $("#userScore").html(totalScore);
 
-        console.log(totalScore);
+      
 
 
 
@@ -64,8 +66,20 @@ $(document).ready(function () {
         if (totalScore > randomNum) {
             //Increment losses by 1
             losses++;
-            //Display losses on page
+            //Update losses on page
             $("#losses").html(losses);
+            //Reset game
+            resetGame();
+        }
+
+        //Win condition
+        else if (totalScore === randomNum) {
+            //Increment wins by 1
+            wins++;
+            //Update wins on page
+            $("#wins").html(wins);
+            //Reset game
+            resetGame();
         }
 
     };
@@ -84,7 +98,7 @@ $(document).ready(function () {
 
             //Reset total score back to zero
             totalScore = 0;
-            $("#totalScore").html(totalScore);
+            $("#userScore").html(totalScore);
         };
 
 
