@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //Gloabl variable
+    //Gloabl variables
 
     var wins = 0;
     var losses = 0;
@@ -10,12 +10,9 @@ $(document).ready(function () {
     var crystalThree = 0;
     var crystalFour = 0;
 
-
     //Generate random number between 19 - 120 for number to guess
     var randomNum = Math.floor(Math.random() * 120) + 19;
     console.log(randomNum);
-
-
 
     //Display random number in Number to guess field
     $("#num-to-guess").html(randomNum);
@@ -48,9 +45,7 @@ $(document).ready(function () {
         update(crystalFour);
     });
 
-    
-
-    //Updating crystal values and total score function
+    //Updating crystal values and win/loss conditions
     function update(crystal) {
 
         //Add totalScore and crystal parameters together
@@ -59,10 +54,6 @@ $(document).ready(function () {
         $("#userScore").empty();
         //Add player's totalScore value
         $("#userScore").html(totalScore);
-
-
-
-
 
         //Loss condition
         if (totalScore > randomNum) {
@@ -87,7 +78,7 @@ $(document).ready(function () {
     };
 
     //Rest game function
-    
+
     function resetGame() {
         console.log("Reset");
         //Generate a new total score number
@@ -106,6 +97,5 @@ $(document).ready(function () {
         totalScore = 0;
         $("#userScore").html(totalScore);
     };
-
 
 });
