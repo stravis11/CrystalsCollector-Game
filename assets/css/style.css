@@ -1,7 +1,26 @@
 
+body {
+    background: url('../images/crystal-background1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+	font-family: 'Dark Crystal Script';
+	src: url(../fonts/dark-crystal-script.ttf);
+}
+
 .container {
 	max-width: 960px;
-	margin: 0 auto;
+    margin: 0 auto;
+    opacity: 0.7;
+    
+}
+
+.jumbotron {
+    font-family: 'Dark Crystal Script', arial;
 }
 
 
@@ -9,7 +28,7 @@
     width: 80px;
     height: 80px;
     /* padding: 5px; */
-    border: solid 3px grey;
+    border: solid 3px blue;
     }
 
 .crystals img:hover {

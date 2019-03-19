@@ -13,7 +13,7 @@ Total score:
 
 1. Generate a random number between 19 - 120 and display it in the random number field.
 
-2. Generate a random number for Crystals:
+2. Generate a random number for Crystals when clicked:
     a. Generate a random number between 1 - 12 and assign to crystal1
     b. Generate a random number between 1 - 12 and assign to Crystal2
     c. Generate a random number between 1 - 12 and assign to Crystal3
