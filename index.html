@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Crystals Collector</title>
+    <title>The Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -14,25 +14,29 @@
 <body>
     <!-- Overall boostrap grid -->
     <div class="container">
+        <!-- Jumbotron header -->
         <div class="jumbotron">
-            <h1 class="text-center"><strong>Crystals Collector</strong></h1>
+            <h1 class="jumbotron-text text-center"><strong>The Crystal Collector</strong></h1>
         </div>
+        <!-- Wins/Losses section -->
         <div class="row Row1">
-            
-            <div class="Wins-losses col-sm-3 card">
-                
-                <h2>Wins : <span id="wins"></span></h2>
-                
-                
-                <h2>Losses : <span id="losses"></span></h2>
-                
-            
+            <div class="Wins col-sm-2 card">
+                <row>
+                    <h4 class="card-header">Win</h4>
+                </row>
+                <span class="card-body win-text" id="wins"></span>
             </div>
-            <div class="Instructions col-sm-9 card">
-                <h4 class="card-header">Instructions</h4>
+            <div class="Losses col-sm-2 card">
+                <h4 class="card-header">Loss</h4>
+                <span class="card-body loss-text" id="losses"></span>
+            </div>
+            <!-- Instructions section -->
+            <div class="Instructions col-sm-8 card">
+                <h4 class="instruct-head card-header">Instructions</h4>
+
                 <div class="card-body">
                     <div class="text-left">
-                        <p>You will be given a random number at the start of the game.
+                        <p class="lead">You will be given a random number at the start of the game.
                             There are four crystals below. By clicking on a crystal you will add a specific amount of
                             points to your
                             total score.
@@ -45,13 +49,17 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+
+
+
 
         <div class="row Row2">
             <div class="Score col-sm-4 card">
-                <h2>Total Score : <span id="userScore"></span></h2>
+                <h2>Total Score</h2>
+                <row>
+                    <h2 class="userscore-text"><span id="userScore"></span></h2>
+                </row>
             </div>
             <div class="crystals col-sm-4">
                 <img src="assets/images/crystal1.png" alt="" class="crystal-image crystal1">
@@ -59,10 +67,13 @@
                 <img src="assets/images/crystal3.png" alt="" class="crystal-image crystal3">
                 <img src="assets/images/crystal4.png" alt="" class="crystal-image crystal4">
             </div>
-            <div class="Random Number col-sm-4 card">
-                <h2>Random Number : <span id="num-to-guess"></span></h2>
+            <div class="RandomNumber col-sm-4 card">
+                <h2>Random Number</h2>
+                <row>
+                    <h2 class="random-num-text"><span id="num-to-guess"></span></h2>
+                </row>
             </div>
-
+        </row>
 
         </div>
 

@@ -16,17 +16,46 @@ body {
 	max-width: 960px;
     margin: 0 auto;
     opacity: 0.7;
+}
+
+.jumbotron-text {
+    font-family: 'Dark Crystal Script', arial;
+    color: #A4127B;    
+    font-size: 5em;
+    text-shadow: 4px 4px 4px #aaa;
+}
+   
+.Wins {
+    text-align: center;
+    font-family: 'Dark Crystal Script', arial;
+    color: #DAA06C;
+    }
+
+.win-text {
+    color: #385991;
+    font-size: 5em;
+}
+
+.Losses{
+    text-align: center;
+    font-family: 'Dark Crystal Script', arial;
+    color: #DAA06C;    
+}
+
+.loss-text {
+    color: #385991;
+    font-size: 5em;
+}
+
+.instruct-head {
+    font-family: 'Dark Crystal Script', arial;
+    color: #DAA06C;
     
 }
 
-.jumbotron {
-    font-family: 'Dark Crystal Script', arial;
-}
-
-
 .crystal-image {
     width: 80px;
-    height: 80px;
+    height: 90px;
     /* padding: 5px; */
     border: solid 3px blue;
     }
@@ -40,5 +69,40 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     /* background-color: red; */
+    margin-top: 12px;
 }
 
+.Score {
+    font-family: 'Dark Crystal Script', arial;
+    color: #97904C;
+    text-align: center;    
+}
+
+
+.RandomNumber {
+    font-family: 'Dark Crystal Script', arial;
+    color: #7EA36E;
+    text-align: center;
+   }
+
+   .random-num-text {
+    font-family: 'Dark Crystal Script', arial;
+    text-align: center;
+   }
+
+#num-to-guess {
+    color: #385991;
+    }
+
+#userScore {
+    color: #385991;
+    text-align: center;
+}
+
+.userscore-text{
+    font-family: 'Dark Crystal Script', arial;
+    text-align: center;
+    color: #385991;
+    
+
+}
