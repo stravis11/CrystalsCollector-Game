@@ -10,23 +10,18 @@ $(document).ready(function () {
     var crystalThree = 0;
     var crystalFour = 0;
 
-    //Generate random number between 19 - 120 for number to guess
+    //Generate random number between 19 - 120
     var randomNum = Math.floor(Math.random() * 120) + 19;
-    console.log(randomNum);
 
-    //Display random number in Number to guess field
+    //Display random number and user score on page
     $("#num-to-guess").html(randomNum);
     $("#userScore").html(totalScore);
 
     //Generate random numbers betwee 1 - 12 for crystals
     var crystalOne = Math.floor(Math.random() * 12) + 1;
-    console.log(crystalOne);
     var crystalTwo = Math.floor(Math.random() * 12) + 1;
-    console.log(crystalTwo);
     var crystalThree = Math.floor(Math.random() * 12) + 1;
-    console.log(crystalThree);
     var crystalFour = Math.floor(Math.random() * 12) + 1;
-    console.log(crystalFour);
 
     //On click functions for when crystals are selected
     $(".crystal1").on("click", function () {
@@ -77,22 +72,19 @@ $(document).ready(function () {
 
     };
 
-    //Rest game function
+    //Reset game function
 
     function resetGame() {
-        console.log("Reset");
         //Generate a new total score number
         randomNum = Math.floor(Math.random() * 120) + 19;
         $("#num-to-guess").html(randomNum);
+        
         //Genreate new random numbers for crystals
         crystalOne = Math.floor(Math.random() * 12) + 1;
-        console.log(crystalOne);
         crystalTwo = Math.floor(Math.random() * 12) + 1;
-        console.log(crystalTwo);
         crystalThree = Math.floor(Math.random() * 12) + 1;
-        console.log(crystalThree);
         crystalFour = Math.floor(Math.random() * 12) + 1;
-        console.log(crystalFour);
+       
         //Reset total score back to zero
         totalScore = 0;
         $("#userScore").html(totalScore);
