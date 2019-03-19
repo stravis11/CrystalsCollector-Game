@@ -11,7 +11,7 @@ $(document).ready(function () {
     var crystalFour = 0;
 
     //Generate random number between 19 - 120
-    var randomNum = Math.floor(Math.random() * 120) + 19;
+    var randomNum = Math.floor((Math.random() * (120 - 19)) + 19);
 
     //Display random number and user score on page
     $("#num-to-guess").html(randomNum);
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     function resetGame() {
         //Generate a new total score number
-        randomNum = Math.floor(Math.random() * 120) + 19;
+        randomNum = Math.floor((Math.random() * (120 - 19)) + 19);
         $("#num-to-guess").html(randomNum);
         
         //Genreate new random numbers for crystals

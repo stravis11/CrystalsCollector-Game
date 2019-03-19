@@ -1,6 +1,25 @@
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
 .crystal-image {
     width: 80px;
     height: 80px;
-    padding: 5px;
-    
+    /* padding: 5px; */
+    border: solid 3px grey;
+    }
+
+.crystals img:hover {
+    cursor: pointer;
 }
+
+.row.Row2 {
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* background-color: red; */
+}
+
