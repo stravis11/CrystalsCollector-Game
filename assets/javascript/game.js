@@ -9,6 +9,18 @@ $(document).ready(function () {
     var crystalTwo = 0;
     var crystalThree = 0;
     var crystalFour = 0;
+    
+    // Gets Link for music
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "../assets/audio/music.mp3");
+
+    // Play/Pause button for music
+    $(".music-button").on("click", function() {
+        audioElement.play();
+      });
+      $(".pause-button").on("click", function() {
+        audioElement.pause();
+      });
 
     //Generate random number between 19 - 120
     var randomNum = Math.floor((Math.random() * (120 - 19)) + 19);
