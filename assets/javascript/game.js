@@ -12,7 +12,7 @@ $(document).ready(function () {
     
     // Gets Link for music
     var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src", "../assets/audio/music.mp3");
+    audioElement.setAttribute("src", "assets/audio/music.mp3");
 
     // Play/Pause button for music
     $(".music-button").on("click", function() {
